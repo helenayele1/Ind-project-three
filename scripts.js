@@ -1,3 +1,5 @@
+//Buissness Logic//
+
 window.onload = function() {
     const form = document.getElementById('input-form');
     const resultContainer = document.getElementById('result-container');
@@ -21,7 +23,8 @@ window.onload = function() {
       resultContainer.appendChild(ul);
     }
   };
-  
+
+//UI Logic//
 
     function beepBoop(number) {
       const result = [];
