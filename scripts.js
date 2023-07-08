@@ -9,6 +9,20 @@ window.onload = function() {
       displayResult(resultArray);
     });
   
+  
+    function displayResult(resultArray) {
+      resultContainer.innerHTML = '';
+      const ul = document.createElement('ul');
+      resultArray.forEach(function(item) {
+        const li = document.createElement('li');
+        li.textContent = item;
+        ul.appendChild(li);
+      });
+      resultContainer.appendChild(ul);
+    }
+  };
+  
+
     function beepBoop(number) {
       const result = [];
       for (let num = 0; num <= number; num++) {
@@ -26,16 +40,3 @@ window.onload = function() {
       }
       return result;
     }
-  
-    function displayResult(resultArray) {
-      resultContainer.innerHTML = '';
-      const ul = document.createElement('ul');
-      resultArray.forEach(function(item) {
-        const li = document.createElement('li');
-        li.textContent = item;
-        ul.appendChild(li);
-      });
-      resultContainer.appendChild(ul);
-    }
-  };
-  
